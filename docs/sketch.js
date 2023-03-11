@@ -20,10 +20,15 @@ function setup() {
 
 // crearuna instancia de carro llamada mimaquina
  let mycar = new carro (5,15,(blue),"my first carr");
+
+console.log("mycar ancho is: "+mycar.ancho);
+console.log("mycar alto is: "+ mycar.alto);
+console.log("nombre de mycar es:"+mycar.name);
 }
 
+
 function draw() {
-  background(200);  
+  background(80);  
   display();
   move();
 }
@@ -49,5 +54,3 @@ function display(){
   fill(255,4,150);
   rect(x, y, 20, 10);
 }
-
-
